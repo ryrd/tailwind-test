@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryder</title>
+    <link rel="stylesheet" href="/css/output.css">
+</head>
+<body class="bg-black text-zinc-300 overflow-x-hidden">
+    <nav class="fixed flex flex-col md:flex-row items-end md:justify-center w-screen z-10 bg-gradient-to-b from-black to-transparent">
+        <img src="./img/menu.png" id="menu" class="h-[70px] w-16 md:hidden p-5">
+        <ul class="hidden md:flex flex-col md:flex-row text-zinc-100 py-4" id="nav-list">
+            <li class="flex items-center justify-center p-3 h-6 border-r border-zinc-300 "><a href="#top">home</a></li>
+            <li class="flex items-center justify-center p-3 h-6 border-r border-zinc-300 "><a href="#about">About us</a></li>
+            <li class="flex items-center justify-center p-3 h-6 border-r border-zinc-300 "><a href="#client">Client</a></li>
+            <li class="flex items-center justify-center p-3 h-6 border-r border-zinc-300 "><a href="#product">product</a></li>
+            <li class="flex items-center justify-center p-3 h-6 border-r border-zinc-300 "><a href="#gallery">gallery</a></li>
+            <li class="flex items-center justify-center p-3 h-6 "><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="w-screen h-[50vh] md:h-screen relative" id="top" style="background: url('./img/landing.jpg'); background-position: center; background-size: cover;">
+        <div id="heading" class="absolute top-1/2 left-[10%] md:left-[14%] -translate-y-1/2 ">
+            <h1 class="text-zinc-100 text-9xl uppercase font-bebas">Ryder</h1>
+            <div class="line"></div>
+            <p class="text-zinc-100 text-xl pt-1">Motorcycle Company</p>
+        </div>
+    </header>
+
+    <div id="about" class="h-[600px] w-screen flex flex-col justify-center pt-6 md:flex-row">
+        <div id="about-text-container" class="flex-2 flex justify-center items-center">
+            <div id="about-text-div" class="w-1/2 flex items-center md:items-start flex-col text-center md:text-left">
+                <h1 class="highlight font-bebas">About us</h1>
+                <div class="h-[2px] w-56 md:w-64 bg-white"></div>
+                <p class="pt-2">Ryder Motor is a Indonesia manufacturer of motorcycles. The company was established in 2021,  headquartered in Jakarta, Indonesia. </p>
+            </div>
+        </div>
+        <div id="about-img-container" class="flex-3 flex items-center justify-center pt-4 overflow-hidden">
+            <div id="about-img" class="w-1/2">
+                <img src="img/3.jpg" class="rotate-3 md:-translate-x-24">
+            </div>
+        </div>
+    </div>
+    <div id="client" class="w-screen h-1/2 flex flex-col justify-center items-center">
+        <div class="w-100 h-1/4">
+            <h1 class="hightlight-2 font-bebas">Client</h1>
+            <div class="line"></div>
+        </div>
+        <ul class="w-[90%] flex flex-wrap justify-around py-10 md:py-16 transition-all">
+            <li class="px-2 text-2xl md:text-5xl">Visit Indonesia</li>
+            <li class="px-2 text-2xl md:text-5xl">Beautiful Destination</li>
+            <li class="px-2 text-2xl md:text-5xl">Earth Wonder</li>
+        </ul>
+    </div>
+
+    <div id="product">
+        <div class="pb-6">
+            <h1 class="hightlight-2 pb-2 font-bebas">product</h1>
+            <div class="m-auto line"></div>
+        </div>
+        <div id="product-card-container" class="w-screen flex flex-col items-center">
+            <div class="flex flex-col md:flex-row w-3/4 md:w-1/2 border border-zinc-300">
+                <div class="flex-1 overflow-hidden">
+                    <img src="img/a6000.webp" class="w-100">
+                </div>
+                <div class="flex-1 flex flex-col items-center justify-center md:items-start md:pl-8 my-5">
+                    <h2 class="uppercase text-4xl font-bebas">Ryder MX-100</h2>
+                    <button class="bg-white text-black border border-zinc-300 px-6 my-1 py-1 
+                                    hover:bg-transparent hover:text-zinc-100 transition duration-400 ease-in">
+                                    Buy
+                    </button>
+                </div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row w-3/4 md:w-1/2 mt-5 border border-zinc-300">
+                <div class="flex-1 overflow-hidden">
+                    <img src="img/a7iii.jpg" class="w-100">
+                </div>
+                <div class="flex-1 flex flex-col items-center justify-center md:items-start md:pl-8 my-5">
+                    <h2 class="uppercase text-4xl font-bebas">Ryder MX-100</h2>
+                    <button class="bg-white text-black border border-zinc-300 px-6 my-1 py-1 
+                                    hover:bg-transparent hover:text-zinc-100 transition duration-400 ease-in">
+                                    Buy
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="gallery" class="pb-10">
+        <div class="section-title pb-6 pt-8">
+            <h1 class="hightlight-2 pb-2 font-bebas">Gallery</h1>
+            <div class="line m-auto"></div>
+        </div>
+        <div id="gallery-card-container" class="w-100 flex flex-wrap justify-center">
+            <div class="w-[40%]  md:w-[20%] mx-4 my-4  h-[200px] overflow-hidden">
+                    <img src="img/1.jpg">
+            </div>
+
+            <div class="w-[40%] md:w-[20%]  mx-4 my-4 h-[200px] overflow-hidden">
+                    <img src="img/2.jpg">
+            </div>
+
+            <div class="w-[40%] md:w-[20%]  mx-4 my-4 h-[200px] overflow-hidden">
+                    <img src="img/3.jpg">
+            </div>
+
+            <div class="w-[40%] md:w-[20%]  mx-4 my-4 h-[200px] overflow-hidden">
+                    <img src="img/4.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="w-screen h-[500px] overflow-hidden relative flex">
+        <div id="contact-text" class="absolute md:relative flex-1
+                                      top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
+                                      md:top-0 md:left-0 md:-translate-x-0 md:-translate-y-0
+                                      z-10 bg-[#000000CC] backdrop-blur-sm p-8 
+                                      border border-zinc-300 md:border-r-0
+                                      md:flex md:flex-col md:justify-center">
+            <h1 class="hightlight-2 pb-2 font-bebas">contact</h1>
+            <div class="h-[2px] w-1/2 md:w-40 m-auto md:m-0 md:mx-auto bg-white"></div>
+            <ul class="text-center pt-2">
+                <li>address: Jakarta St.</li>
+                <li>Telp: 12345</li>
+                <li>email: ryder@email.com</li>
+            </ul>
+        </div>
+        <div id="contact-img" class="w-full flex-1">
+            <img src="img/3.jpg" class="H-full">
+        </div>
+    </div>
+
+    <script>
+        const menu = document.querySelector("#menu");
+        const nav = document.querySelector("#nav-list");
+
+        menu.addEventListener('click', ()=>{
+            console.log('tesssss');
+            nav.classList.toggle("hidden");
+            nav.classList.toggle("flex");
+        });
+    </script>
+</body>
+</html>
