@@ -7,33 +7,33 @@
     <title>Banjarmasin</title>
     <link rel="stylesheet" href="/css/output.css">
 </head>
-<body class="bg-black text-neutral-200 overflow-x-hidden">
-    <nav class="fixed flex flex-col md:flex-row items-end md:justify-center w-screen z-20 bg-gradient-to-b from-black to-transparent">
-        <img src="./img/menu.png" id="menu" class="h-[70px] w-16 md:hidden p-5">
-        <ul class="hidden md:flex flex-col md:flex-row text-neutral-200 py-4" id="nav-list">
-            <li class="flex items-center justify-center p-3 h-6 border-r border-neutral-200 "><a href="#top">home</a></li>
-            <li class="flex items-center justify-center p-3 h-6 border-r border-neutral-200 "><a href="#about">About</a></li>
-            <li class="flex items-center justify-center p-3 h-6 border-r border-neutral-200 "><a href="#client">Client</a></li>
-            <li class="flex items-center justify-center p-3 h-6 border-r border-neutral-200 "><a href="#product">Places</a></li>
-            <li class="flex items-center justify-center p-3 h-6 border-r border-neutral-200 "><a href="#gallery">gallery</a></li>
-            <li class="flex items-center justify-center p-3 h-6"><a href="#contact">Contact</a></li>
+<body class="overflow-x-hidden bg-black text-neutral-200">
+    <nav class="fixed z-20 flex flex-col items-end w-screen md:flex-row md:justify-center bg-gradient-to-b from-black to-transparent">
+        <img src="./img/menu.svg" id="menu" class="h-[70px] w-16 md:hidden p-5">
+        <ul class="flex-col hidden py-4 md:flex md:flex-row text-neutral-100" id="nav-list">
+            <li class="flex items-center justify-center h-6 p-3 tracking-wide border-r border-neutral-200 font-robotoc"><a href="#top">home</a></li>
+            <li class="flex items-center justify-center h-6 p-3 tracking-wide border-r border-neutral-200 font-robotoc"><a href="#about">About</a></li>
+            <li class="flex items-center justify-center h-6 p-3 tracking-wide border-r border-neutral-200 font-robotoc"><a href="#client">Client</a></li>
+            <li class="flex items-center justify-center h-6 p-3 tracking-wide border-r border-neutral-200 font-robotoc"><a href="#product">Places</a></li>
+            <li class="flex items-center justify-center h-6 p-3 tracking-wide border-r border-neutral-200 font-robotoc"><a href="#gallery">gallery</a></li>
+            <li class="flex items-center justify-center h-6 p-3 tracking-wide font-robotoc"><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <header class="w-screen h-[90vh] md:h-screen relative" id="top" style="background-image: url('https://source.unsplash.com/6k8Bs2VPqvU'); background-position: center; background-size: cover;">
-        <div id="heading" class="absolute top-[25%] md:top-1/2 left-1/2 md:left-[14%] -translate-x-1/2 md:-translate-x-0 -translate-y-1/2">
-            <h1 class="text-neutral-200 text-[2.6rem] md:text-7xl uppercase font-marker mix-blend-difference bg-black bg-opacity-40">Banjarmasin</h1>
-            <div class="line"></div>
-            <p class="text-neutral-200 text-2xl pt-1 font-robotoc text-center md:text-left bg-black bg-opacity-40">South Borneo</p>
+        <div id="heading" class="absolute top-[25%] left-1/2 -translate-x-1/2 -translate-y-1/2 px-8 py-5 main-text">
+            <h1 class="text-neutral-200 text-[2.6rem] md:text-8xl uppercase font-marker">Banjarmasin</h1>
         </div>
+        <div class="absolute bottom-0 w-full h-1/4 bg-gradient-to-b from-transparent to-black"></div>
+        <span class="absolute text-xs -translate-x-1/2 md:text-lg bottom-10 left-1/2 font-robotoc">scroll down <img src="./img/arrow.svg" class="inline-block w-3 ml-1 md:w-5"></span>
     </header>
 
     <div id="about" class="h-[70vh] md:h-screen w-screen flex flex-col justify-center pt-16 md:pt-6 md:flex-row">
         <div id="about-text-container" class="flex flex-[4] justify-center items-center">
-            <div id="about-text-div" class="w-3/4 flex items-center md:pl-11 md:items-start flex-col text-center md:text-left">
-                <h1 class="highlight font-marker text-xl">About</h1>
+            <div id="about-text-div" class="flex flex-col items-center w-3/4 text-center md:pl-11 md:items-start md:text-left">
+                <h1 class="text-xl highlight font-marker">About</h1>
                 <div class="h-[2px] w-56 md:w-64 bg-neutral-200"></div>
-                <p class="pt-2 pl-1 font-robotoc">
+                <p class="pt-2 pl-1 tracking-wide font-robotoc">
                     Banjarmasin is a city in South Kalimantan, Indonesia. It was the capital of the province 
                     until 15 February 2022. The city is located on a delta island near the junction of the Barito and 
                     Martapura rivers. Historically the centre of the Banjarese culture and the capital of 
@@ -45,76 +45,72 @@
         <div id="about-img-container" class="flex-[6] flex items-center justify-center md:pt-4 overflow-hidden">
             <div id="about-img" class="w-[80%] aspect-video relative">
                 <img class="w-full aspect-video" src="https://source.unsplash.com/ybviRz7xVAM">
-                <div class="w-full aspect-video border-2 border-neutral-200 absolute top-2 left-2 md:left-3 -z-10"></div>
+                <div class="absolute w-full border-2 aspect-video border-neutral-200 top-2 left-2 md:left-3 -z-10"></div>
             </div>
         </div>
     </div>
-    <div id="client" class="w-screen flex flex-col justify-center items-center pt-10 md:pt-0">
+    <div id="client" class="flex flex-col items-center justify-center w-screen pt-10 md:pt-0">
         <div class="w-full h-1/4">
-            <h1 class="hightlight-2 font-marker text-sm">Client</h1>
+            <h1 class="text-sm hightlight-2 font-marker">Client</h1>
             <div class="m-auto line"></div>
         </div>
         <ul class="w-[80%] md:w-[90%] flex flex-wrap justify-around py-10 md:py-16 transition-all">
-            <li class="px-1 py-1 text-xl md:text-4xl uppercase font-robotoc">Wonderful Indonesia</li>
-            <li class="px-1 py-1 text-xl md:text-4xl uppercase font-robotoc">Beautiful Destination</li>
-            <li class="px-1 py-1 text-xl md:text-4xl uppercase font-robotoc">Visit Kalsel</li>
+            <li class="px-1 py-1 text-xl tracking-wide uppercase md:text-4xl font-robotoc">Wonderful Indonesia</li>
+            <li class="px-1 py-1 text-xl tracking-wide uppercase md:text-4xl font-robotoc">Beautiful Destination</li>
+            <li class="px-1 py-1 text-xl tracking-wide uppercase md:text-4xl font-robotoc">Visit Kalsel</li>
         </ul>
     </div>
 
     <div id="product" class="mt-5 mb-10">
         <div class="pb-6">
-            <h1 class="hightlight-2 pb-2 text-sm font-marker">Destination</h1>
+            <h1 class="pb-2 text-sm hightlight-2 font-marker">Destination</h1>
             <div class="m-auto line"></div>
         </div>
-        <div id="product-card-container" class="w-screen flex flex-row flex-wrap justify-center items-center gap-5">
-            <div class="flex flex-col md:flex-row w-3/4 md:h-36 md:min-h-28 md:w-[42vw] border border-neutral-200">
+        <div id="product-card-container" class="flex flex-row flex-wrap items-center justify-center w-screen gap-5">
+            <div class="flex flex-col md:flex-row w-3/4 md:h-42 md:min-h-28 md:w-[42vw] border border-neutral-200">
                 <div class="flex-1 overflow-hidden">
                     <img src="https://source.unsplash.com/6k8Bs2VPqvU/1600x900" class="h-full">
                 </div>
-                <div class="flex-1 flex flex-col items-center justify-center md:items-start my-5">
-                    <h2 class="uppercase text-lg md:text-2xl font-roboto font-bold tracking-wide">Menara Pandang</h2>
-                    <button class="bg-neutral-200 font-robotoc text-black border border-neutral-200 px-6 my-1 py-1 
-                                    hover:bg-transparent hover:text-neutral-200 transition duration-400 ease-in">
-                                    Visit
+                <div class="flex flex-col items-center justify-center flex-1 my-5 md:pl-5 md:items-start">
+                    <h2 class="text-lg font-bold tracking-wide uppercase md:text-2xl font-roboto">Menara Pandang</h2>
+                    <button class="px-6 py-1 my-1 tracking-wide text-black transition ease-in border font-w bg-neutral-200 font-roboto border-neutral-200 hover:bg-transparent hover:text-neutral-200 duration-400">
+                        Visit
                     </button>
                 </div>
             </div>
             
-            <div class="flex flex-col md:flex-row w-3/4 md:h-36 md:min-h-28 md:w-[42vw] border border-neutral-200">
+            <div class="flex flex-col md:flex-row w-3/4 md:h-42 md:min-h-28 md:w-[42vw] border border-neutral-200">
                 <div class="flex-1 overflow-hidden">
                     <img src="https://source.unsplash.com/ybviRz7xVAM/1600x900" class="h-full">
                 </div>
-                <div class="flex-1 flex flex-col items-center justify-center md:items-start my-5">
-                    <h2 class="uppercase text-lg md:text-2xl font-roboto font-bold tracking-wide">Siring Banjarmasin</h2>
-                    <button class="bg-neutral-200 font-robotoc text-black border border-neutral-200 px-6 my-1 py-1 
-                                    hover:bg-transparent hover:text-neutral-200 transition duration-400 ease-in">
-                                    Visit
+                <div class="flex flex-col items-center justify-center flex-1 my-5 md:pl-5 md:items-start">
+                    <h2 class="text-lg font-bold tracking-wide uppercase md:text-2xl font-roboto">Siring Banjarmasin</h2>
+                    <button class="px-6 py-1 my-1 tracking-wide text-black transition ease-in border bg-neutral-200 font-roboto border-neutral-200 hover:bg-transparent hover:text-neutral-200 duration-400">
+                        Visit
                     </button>
                 </div>
             </div>
 
-            <div class="flex flex-col md:flex-row w-3/4 md:h-36 md:min-h-28 md:w-[42vw] border border-neutral-200">
+            <div class="flex flex-col md:flex-row w-3/4 md:h-42 md:min-h-28 md:w-[42vw] border border-neutral-200">
                 <div class="flex-1 overflow-hidden">
                     <img src="https://source.unsplash.com/32AfRn0tOqE/1600x900" class="h-full">
                 </div>
-                <div class="flex-1 flex flex-col items-center justify-center md:items-start my-5">
-                    <h2 class="uppercase text-lg md:text-2xl font-roboto font-bold tracking-wide">Jembatan Barito</h2>
-                    <button class="bg-neutral-200 font-robotoc text-black border border-neutral-200 px-6 my-1 py-1 
-                                    hover:bg-transparent hover:text-neutral-200 transition duration-400 ease-in">
-                                    Visit
+                <div class="flex flex-col items-center justify-center flex-1 my-5 md:pl-5 md:items-start">
+                    <h2 class="text-lg font-bold tracking-wide uppercase md:text-2xl font-roboto">Jembatan Barito</h2>
+                    <button class="px-6 py-1 my-1 tracking-wide text-black transition ease-in border bg-neutral-200 font-roboto border-neutral-200 hover:bg-transparent hover:text-neutral-200 duration-400">
+                        Visit
                     </button>
                 </div>
             </div>
 
-            <div class="flex flex-col md:flex-row w-3/4 md:h-36 md:min-h-28 md:w-[42vw] border border-neutral-200">
+            <div class="flex flex-col md:flex-row w-3/4 md:h-42 md:min-h-28 md:w-[42vw] border border-neutral-200">
                 <div class="flex-1 overflow-hidden">
                     <img src="https://source.unsplash.com/O0Xw3c191Sw/1600x900" class="h-full">
                 </div>
-                <div class="flex-1 flex flex-col items-center justify-center md:items-start my-5">
-                    <h2 class="uppercase text-lg md:text-2xl font-roboto font-bold tracking-wide text-center">Masjid Raya Sabilal Muhtadin</h2>
-                    <button class="bg-neutral-200 font-robotoc text-black border border-neutral-200 px-6 my-1 py-1 
-                                    hover:bg-transparent hover:text-neutral-200 transition duration-400 ease-in">
-                                    Visit
+                <div class="flex flex-col items-center justify-center flex-1 my-5 md:pl-5 md:items-start">
+                    <h2 class="text-lg font-bold tracking-wide text-center uppercase md:text-left md:text-2xl font-roboto">Masjid Raya Sabilal Muhtadin</h2>
+                    <button class="px-6 py-1 my-1 tracking-wide text-black transition ease-in border bg-neutral-200 border-neutral-200 hover:bg-transparent hover:text-neutral-200 duration-400">
+                        Visit
                     </button>
                 </div>
             </div>
@@ -122,12 +118,12 @@
         </div>
     </div>
 
-    <div id="gallery" class="flex justify-center items-center flex-col pb-10">
-        <div class="section-title pb-6 pt-8">
-            <h1 class="hightlight-2 pb-2 font-marker">Gallery</h1>
-            <div class="line m-auto"></div>
+    <div id="gallery" class="flex flex-col items-center justify-center pb-10">
+        <div class="pt-8 pb-6 section-title">
+            <h1 class="pb-2 hightlight-2 font-marker">Gallery</h1>
+            <div class="m-auto line"></div>
         </div>
-        <div id="gallery-card-container" class="w-100 flex flex-wrap justify-center">
+        <div id="gallery-card-container" class="flex flex-wrap justify-center w-100">
             <div class="w-[40%]  md:w-[20%] mx-4 my-4  overflow-hidden">
                 <img src="https://source.unsplash.com/PD_4gHa6sLw/900x1200">
             </div>
@@ -146,19 +142,19 @@
         </div>
     </div>
 
-    <div id="contact" class="w-screen md:h-screen overflow-hidden relative flex">
+    <div id="contact" class="relative flex w-screen overflow-hidden md:h-screen">
         <div id="contact-text" class="absolute md:relative flex-1
                                       top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
                                       md:top-0 md:left-0 md:-translate-x-0 md:-translate-y-0
                                       z-10 bg-[#000000CC] backdrop-blur-sm p-8 
                                       border border-neutral-200 border-opacity-50 md:border-r-0
                                       md:flex md:flex-col md:justify-center">
-            <ul class="text-center pt-2">
-                <h1 class="hightlight-2 pb-2 font-marker">Banjarmasin</h1>
-                <li class="font-robotoc">South Borneo, Indonesia</li>
+            <ul class="pt-2 text-center">
+                <h1 class="pb-2 text-6xl hightlight-2 font-marker">Banjarmasin</h1>
+                <li class="tracking-wide font-robotoc">South Borneo, Indonesia</li>
             </ul>
         </div>
-        <div id="contact-img" class="w-full flex-1">
+        <div id="contact-img" class="flex-1 w-full">
             <img src="https://source.unsplash.com/PD_4gHa6sLw" class="w-full h-full">
         </div>
     </div>
