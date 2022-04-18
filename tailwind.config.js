@@ -5,6 +5,8 @@ module.exports = {
       fontFamily: {
         bebas: ['bebas'],
         roboto: ['roboto'],
+        marker: ['marker'],
+        robotoc: ['robotoc'],
       }
     },
   },
