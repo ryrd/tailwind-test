@@ -8,30 +8,33 @@
     <link rel="stylesheet" href="/css/output.css">
 </head>
 <body class="overflow-x-hidden bg-black text-neutral-200">
-    <nav class="fixed z-20 flex flex-col items-end w-screen md:flex-row md:justify-center bg-gradient-to-b from-black to-transparent">
-        <img src="./img/menu.svg" id="menu" class="h-[70px] w-16 md:hidden p-5">
-        <ul class="flex-col hidden py-4 md:flex md:flex-row text-neutral-100" id="nav-list">
-            <li class="flex items-center justify-center h-6 p-3 tracking-wide border-r border-neutral-200 font-robotoc"><a href="#top">home</a></li>
-            <li class="flex items-center justify-center h-6 p-3 tracking-wide border-r border-neutral-200 font-robotoc"><a href="#about">About</a></li>
-            <li class="flex items-center justify-center h-6 p-3 tracking-wide border-r border-neutral-200 font-robotoc"><a href="#client">Client</a></li>
-            <li class="flex items-center justify-center h-6 p-3 tracking-wide border-r border-neutral-200 font-robotoc"><a href="#product">Places</a></li>
-            <li class="flex items-center justify-center h-6 p-3 tracking-wide border-r border-neutral-200 font-robotoc"><a href="#gallery">gallery</a></li>
-            <li class="flex items-center justify-center h-6 p-3 tracking-wide font-robotoc"><a href="#contact">Contact</a></li>
+
+    <img src="./img/menu.svg" id="menu" class="h-[70px] w-16 md:hidden p-5 fixed right-1 bg-black rounded-full z-50" style="background: radial-gradient(circle, rgba(0,0,0,0.3) 0%, rgba(0,212,255,0) 70%);">
+
+    <nav class="fixed z-20 flex flex-col items-center w-screen h-auto md:h-20 md:flex-row md:justify-center md:bg-gradient-to-b md:from-black md:to-transparent" id="nav-list">
+        <ul class="flex-col w-[25%] md:py-4 md:w-auto md:flex md:flex-row text-neutral-100 mt-6 mb-9 md:mb-0 md:mt-0">
+            <li class="flex items-center justify-center h-6 px-3 text-xl tracking-wide border-b py-6 md:py-0 md:text-base md:border-r md:border-b-0 border-neutral-200 font-robotoc"><a href="#top">home</a></li>
+            <li class="flex items-center justify-center h-6 px-3 text-xl tracking-wide border-b py-6 md:py-0 md:text-base md:border-r md:border-b-0 border-neutral-200 font-robotoc"><a href="#about">About</a></li>
+            <li class="flex items-center justify-center h-6 px-3 text-xl tracking-wide border-b py-6 md:py-0 md:text-base md:border-r md:border-b-0 border-neutral-200 font-robotoc"><a href="#client">Client</a></li>
+            <li class="flex items-center justify-center h-6 px-3 text-xl tracking-wide border-b py-6 md:py-0 md:text-base md:border-r md:border-b-0 border-neutral-200 font-robotoc"><a href="#product">Places</a></li>
+            <li class="flex items-center justify-center h-6 px-3 text-xl tracking-wide border-b py-6 md:py-0 md:text-base md:border-r md:border-b-0 border-neutral-200 font-robotoc"><a href="#gallery">gallery</a></li>
+            <li class="flex items-center justify-center h-6 px-3 text-xl tracking-wide border-b py-6 md:py-0 md:text-base md:border-0 md:border-b-0 font-robotoc"><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <header class="w-screen h-[90vh] md:h-screen relative" id="top" style="background-image: url('https://source.unsplash.com/6k8Bs2VPqvU'); background-position: center; background-size: cover;">
         <div id="heading" class="absolute top-[25%] left-1/2 -translate-x-1/2 -translate-y-1/2 px-8 py-5 main-text">
-            <h1 class="text-neutral-200 text-[2.6rem] md:text-8xl uppercase font-marker">Banjarmasin</h1>
+            <h1 class="text-white text-[2.6rem] md:text-8xl uppercase font-marker">Banjarmasin</h1>
         </div>
         <div class="absolute bottom-0 w-full h-1/4 bg-gradient-to-b from-transparent to-black"></div>
         <span class="absolute text-xs -translate-x-1/2 md:text-lg bottom-10 left-1/2 font-robotoc">scroll down <img src="./img/arrow.svg" class="inline-block w-3 ml-1 md:w-5"></span>
+        <span class="absolute text-[6px] md:text-[12px] bottom-2 left-2 font-robotoc text-slate-50 text-opacity-50">this site is just a dummy project</span>
     </header>
 
-    <div id="about" class="h-[70vh] md:h-screen w-screen flex flex-col justify-center pt-16 md:pt-6 md:flex-row">
+    <div id="about" class="min-h-[600px] h-[70vh] md:h-screen w-screen flex flex-col justify-center pt-16 md:pt-6 md:flex-row">
         <div id="about-text-container" class="flex flex-[4] justify-center items-center">
             <div id="about-text-div" class="flex flex-col items-center w-3/4 text-center md:pl-11 md:items-start md:text-left">
-                <h1 class="text-xl highlight font-marker">About</h1>
+                <h1 class="pl-2 text-xl highlight font-marker">About</h1>
                 <div class="h-[2px] w-56 md:w-64 bg-neutral-200"></div>
                 <p class="pt-2 pl-1 tracking-wide font-robotoc">
                     Banjarmasin is a city in South Kalimantan, Indonesia. It was the capital of the province 
@@ -43,8 +46,9 @@
             </div>
         </div>
         <div id="about-img-container" class="flex-[6] flex items-center justify-center md:pt-4 overflow-hidden">
-            <div id="about-img" class="w-[80%] aspect-video relative">
-                <img class="w-full aspect-video" src="https://source.unsplash.com/ybviRz7xVAM">
+            <div id="about-img" class="w-[70%] md:w-[80%] aspect-video relative">
+                <img class="w-full aspect-video" id="second-img" src="https://source.unsplash.com/yHnz8bfgrGw">
+                <div class="absolute w-full aspect-video top-0 left-0 -z-[5]" style="background: url(./img/img2.jpg); background-size: cover; transform: rotate(180deg) scaleX(-100%);"></div>
                 <div class="absolute w-full border-2 aspect-video border-neutral-200 top-2 left-2 md:left-3 -z-10"></div>
             </div>
         </div>
@@ -155,18 +159,37 @@
             </ul>
         </div>
         <div id="contact-img" class="flex-1 w-full">
-            <img src="https://source.unsplash.com/PD_4gHa6sLw" class="w-full h-full">
-        </div>
+            <img src="/img/img3.jpg" class="w-full h-[110%]">
+        </img>
     </div>
 
     <script>
         const menu = document.querySelector("#menu");
         const nav = document.querySelector("#nav-list");
+        let navOpen = false;
 
         menu.addEventListener('click', ()=>{
-            nav.classList.toggle("hidden");
-            nav.classList.toggle("flex");
+            if(!navOpen) {
+                nav.style.transform = "translateY(0%)"; 
+                navOpen = !navOpen;
+            }
+            else {
+                nav.style.transform = "translateY(-100%)"; 
+                navOpen = !navOpen;
+            };
         });
+
+        window.onresize = () => { if(window.innerWidth > 768) nav.style.transform = "translateY(0%)" }; 
+
+        const img = document.querySelector('#second-img');
+        img.addEventListener("click", ()=>{
+            setTimeout(() => {
+                img.style.display = 'none';
+                setTimeout(() => {
+                    img.style.display = 'block';}
+                , 5000);
+            }, 5000);
+        })
     </script>
 </body>
 </html>
